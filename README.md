@@ -1,42 +1,19 @@
-Package para recuperação do IP Externo (http://checkip.dyndns.org).
+This package helps you get external IP using api.ipify.org 
 
-## Uso
+## Usage
 
-Um simples exemplo de uso:
+A basic example of usage
 
 ```dart
 import 'package:ip_externo/ip_externo.dart';
 
-main() async {
-  var IP = new ip_externo();
-
-  var result = await IP.ReadIP();
-
-  // Sucesso
-  if (IP.getResponse() == 200) {
-    print('IP Externo: '+IP.getIP());
-  } else {
-    print('Código de Retorno: '+IP.getResponse().toString());
-    print('Erro: '+IP.getBody());
-  }
+void main() async {
+  final yourIp = await IpExterno.ipAddress;
 }
 ```
-
-## Recursos
-
-ReadIP - Método que realiza a consulta do IP Externo.
-
-gets
-
-    getBody(); // Retorna na integralidade a resposta da API.
-    getResponse(); // Retorna o código da consulta a API (Padrão 200 para sucesso).
     
-    Quando houver sucesso (código 200) os métodos abaixo trazem retorno, do contrário retornam null;
-    
-    getIP(); // Recupera o IP Externo (formatado).     
-    
-## Funcionalidades e Bugs
+## Found a bug or want new feature?
 
-Por favor para requisições de funcionalidades e bugs [issue tracker][tracker].
+Please, if found a bug or want submit new feature feel free to open your PR or create new [issue tracker][tracker].
 
 [tracker]: https://github.com/mateuspenha/ip_externo/issues

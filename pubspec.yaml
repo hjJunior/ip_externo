@@ -1,6 +1,6 @@
 name: ip_externo
 description: Uma biblioteca para consulta de IP externo para desenvolvedores Dart (Console, Web e Flutter).
-version: 1.0.3
+version: 2.0.0
 homepage: https://debugging.com.br/
 repository: https://github.com/mateuspenha/ip_externo
 issue_tracker: https://github.com/mateuspenha/ip_externo/issues
